@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'ImperialScript';
+    src: url('fonts/ImperialScript-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'LeagueScript';
+    src: url('fonts/LeagueScript.woff2') format('woff2');
+}
+#display{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: none;
+    text-align: center;
+    height: 100vh;
+    width: 80vw;
+    margin: none;
+    box-sizing: border-box;
+    bottom: 50%;
+    height: 100dvh;
+}
+#a7a, #a9a {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 100px;
+}
+html {
+    scroll-behavior: smooth;
+}
+#bornon{
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #e1e6e3;
+    color: #e1e6e3;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'ImperialScript';
+    transition: 0.5s ease-in-out;
+    width: 120px;
+    position: relative;
+    display: block;
+}
+.placeholder{
+    text-align: center;
+    position: relative;
+    top: -38px;
+    font-size: 30px;
+    color:#616261;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+}
+#text{
+    background: none;
+    width: 120px;
+    height: 35px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+#bornon:focus ~ .placeholder, #bornon:valid ~ .placeholder{
+    top: -69px;
+    font-size: 20px;
+    color: #e1e6e3;
+}
+#bornon:focus{
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+#upper, #end1{
+    font-size: 85px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    -webkit-text-size-adjust: 80%;
+}
+#lower, #end2{
+    font-size: 30px;
+    margin-top: 0%;
+    padding-top: 0%;
+    font-family: 'LeagueScript';
+}
+#verify{
+    align-items: center;
+    background: none;
+    outline: none;
+    border: none;
+    color: #c4c7c5;
+    cursor: pointer;
+    font-family: 'ImperialScript';
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    width: 400px;
+    height: 30px;
+    transition: 0.5s ease-in-out;
+}
+#verify:hover{
+    color: #adb0ae;
+}
+#verify:hover #right, #verify:hover #left, #verify:focus #right, #verify:focus #left{
+    width: 100px;
+    background-color: #e1e6e3;
+}
+#verify:focus{
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    color: #c4c7c5;
+}
+#verify:focus #right, #verify:focus #left{
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+#left, #right{
+    width: 1px;
+    top: 50%;
+    height: 1px;
+    background: none;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+#left{
+    float: left;
+    left: 300px;
+}
+#right{
+    float: right;
+    right: 300px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #e1e6e3;
+    font-family: 'ImperialScript', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    overflow-x: hidden;
+    top: 50%;
+    bottom: 50%;
+}
+#a1b{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'LeagueScript', sans-serif;
+    color: #e1e6e3;
+    font-size: 80px;
+    transition: 0.4s ease-in-out;
+    height: 100vh;
+    height: 100dvh;
+}
+#a3b{
+    opacity: 0;
+    left: 0;
+    display: flex;
+    margin: 0; padding: 0;
+    border: none;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    background-color: #e1e6e3;
+    box-shadow: 0 0 10px 10px #e1e6e3, 0 0 30px 10px #e1e6e3, 0 0 60px 30px #e1e6e3;
+    z-index: 999;
+}
+#bottomSpacing{
+    margin: 0; padding: 0;
+    border: none;
+    width: 100%;
+    bottom: 0;
+    height: 0px;
+    background: none;
+    z-index: 99;
+}
+#a2b:active{
+   cursor: grabbing; 
+}
+#a1a, #a2a, #a3a, #a4a, #a5a, #a6a, #a7a, #a8a, #a9a, #a10a, #a11a, #a12a{
+    font-family: 'LeagueScript', sans-serif;
+    text-align: left;
+    color: black;
+    font-size: 50px;
+    font-weight: 1000;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 5px
+}
+@keyframes textLoading{
+    from{width: 0;}
+    to{width: 100%;}
+}
