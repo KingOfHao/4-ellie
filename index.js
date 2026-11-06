@@ -30,6 +30,7 @@ function createElement(element, id, parent) {
 }
 function main() {
     lightSwitch.currentTime = 0;
+    document.getElementById("a1a").style.opacity = 0;
     document.getElementById("a1b").style.opacity = 0;
     setTimeout(() => removeElementOpacity("upper"), 1000);
     setTimeout(() => lightSwitch.play(), 1000);
@@ -44,12 +45,18 @@ function main() {
             removeElement("text");
             removeElement("verify");
             text("a1b", "Hello ellie")
+            text("a1a", "Cái web mà tôi nói nè\nDùng để nhắn tin thôi chứ chả làm được gì hết\nhttps://chatbox-orcin.vercel.app/\n(tin nhắn sẽ tự xóa sau 100 tin)")
         }, 500);
     }, 4000);
     setTimeout(() => {document.getElementById("a1b").style.opacity = 1;}, 8000);
     setTimeout(() => {
         document.getElementById("a1b").style.opacity = 0;
-        setTimeout(() => {voiceMessage.play();}, 3000);
+        setTimeout(() => {
+            voiceMessage.play();
+            setTimeout(() => {
+                a1a.style.opacity = 1;
+            }, 63000)
+        }, 3000);
     }, 10000);
 }
 function wrong() {
