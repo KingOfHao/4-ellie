@@ -44,6 +44,7 @@ function main() {
             removeElement("upper");
             removeElement("text");
             removeElement("verify");
+            removeElement("login");
             text("a1b", "Hello ellie")
             text("a1a", "Cái web mà tôi nói nè\nDùng để nhắn tin thôi chứ chả làm được gì hết\nKhi nào cần bà ngại nhắn tui thì nhắn qua cái này cũng được\nhttps://chatbox-orcin.vercel.app/\n(tin nhắn sẽ tự xóa sau 100 tin)")
         }, 500);
