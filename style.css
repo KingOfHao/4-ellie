@@ -7,19 +7,34 @@
     src: url('fonts/LeagueScript.woff2') format('woff2');
 }
 #display{
-    display: block;
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: none;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 80vw;
     margin: none;
     box-sizing: border-box;
     bottom: 50%;
     height: 100dvh;
+}
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#display > :empty {
+    display: none;
+}
+#display > p {
+    margin: 0;
 }
 #a7a, #a9a {
   display: flex;
@@ -70,17 +85,19 @@ html {
 #bornon:focus{
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
 }
-#upper, #end1{
+#upper{
+    margin: 0 0 20px;
     font-size: 85px;
     margin-bottom: 0%;
     padding-bottom: 0%;
     -webkit-text-size-adjust: 80%;
 }
-#lower, #end2{
-    font-size: 30px;
-    margin-top: 0%;
-    padding-top: 0%;
-    font-family: 'LeagueScript';
+#notification {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% + 110px);
+    font-size: 20px;
 }
 #verify{
     align-items: center;
@@ -154,6 +171,7 @@ body{
     height: 100dvh;
 }
 #a1a{
+    display: none;
     font-family: 'LeagueScript', sans-serif;
     justify-content: center;
     align-items: center;
@@ -161,6 +179,7 @@ body{
     color: #e1e6e3;
     white-space: pre-line;
     font-size: 40px;
+    font-weight: 1000;
     transition: 0.5s ease-in-out;
     margin-bottom: 5px;
     height: 100vh;
