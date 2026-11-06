@@ -184,12 +184,17 @@ body{
 }
 #a1a, #a2a, #a3a, #a4a, #a5a, #a6a, #a7a, #a8a, #a9a, #a10a, #a11a, #a12a{
     font-family: 'LeagueScript', sans-serif;
-    text-align: left;
-    color: black;
-    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #e1e6e3;
+    white-space: pre-line;
+    font-size: 40px;
     font-weight: 1000;
     transition: 0.5s ease-in-out;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    height: 100vh;
+    height: 100dvh;
 }
 @keyframes textLoading{
     from{width: 0;}
