@@ -4,7 +4,7 @@
 let x = 0;
 let y;
 let z;
-var voiceMessage = new Audio('media/voiceMessage.mp3');
+var voiceMessage = new Audio('media/voice-message.mp3');
 var lightSwitch = new Audio('media/lightSwitchSound.mp3');
 
 const e7a = document.getElementById("a7a");
