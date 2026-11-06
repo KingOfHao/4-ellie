@@ -153,36 +153,7 @@ body{
     height: 100vh;
     height: 100dvh;
 }
-#a3b{
-    opacity: 0;
-    left: 0;
-    display: flex;
-    margin: 0; padding: 0;
-    border: none;
-    position: fixed;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    bottom: 0;
-    height: 1px;
-    background-color: #e1e6e3;
-    box-shadow: 0 0 10px 10px #e1e6e3, 0 0 30px 10px #e1e6e3, 0 0 60px 30px #e1e6e3;
-    z-index: 999;
-}
-#bottomSpacing{
-    margin: 0; padding: 0;
-    border: none;
-    width: 100%;
-    bottom: 0;
-    height: 0px;
-    background: none;
-    z-index: 99;
-}
-#a2b:active{
-   cursor: grabbing; 
-}
-#a1a, #a2a, #a3a, #a4a, #a5a, #a6a, #a7a, #a8a, #a9a, #a10a, #a11a, #a12a{
+#a1a{
     font-family: 'LeagueScript', sans-serif;
     justify-content: center;
     align-items: center;
