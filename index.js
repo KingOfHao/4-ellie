@@ -45,7 +45,7 @@ function main() {
             removeElement("text");
             removeElement("verify");
             text("a1b", "Hello ellie")
-            text("a1a", "Cái web mà tôi nói nè\nDùng để nhắn tin thôi chứ chả làm được gì hết\nhttps://chatbox-orcin.vercel.app/\n(tin nhắn sẽ tự xóa sau 100 tin)")
+            text("a1a", "Cái web mà tôi nói nè\nDùng để nhắn tin thôi chứ chả làm được gì hết\nKhi nào cần bà ngại nhắn tui thì nhắn qua cái này cũng được\nhttps://chatbox-orcin.vercel.app/\n(tin nhắn sẽ tự xóa sau 100 tin)")
         }, 500);
     }, 4000);
     setTimeout(() => {document.getElementById("a1b").style.opacity = 1;}, 8000);
